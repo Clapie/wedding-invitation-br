@@ -1,0 +1,130 @@
+/* :root {
+  --bs-breakpoint-xs: 0;
+  --bs-breakpoint-sm: 576px;
+  --bs-breakpoint-md: 768px;
+  --bs-breakpoint-lg: 992px;
+  --bs-breakpoint-xl: 1200px;
+  --bs-breakpoint-xxl: 1400px;
+} */
+
+@font-face {
+  font-family: 'Frunchy';
+  src: url('assets/frunchy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/Inter-Regular.woff2') format('woff2');
+}
+
+body {
+  background-color: #444444 !important;
+  font-family: 'Frunchy', sans-serif !important;
+  color: #1D1918;
+  padding: 0;
+  margin: 0;
+}
+
+.font-inter {
+  font-family: 'Inter';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-frunchy {
+  font-family: 'Frunchy';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  background-color: #EAEBDD;
+}
+
+.mobile-container {
+  display: block;
+  max-width: var(--bs-breakpoint-sm) !important;
+}
+
+.fs-1-half-rem {
+  font-size: 1.5rem;
+}
+
+.fs-2-rem {
+  font-size: 2rem;
+}
+
+.fs-2-half-rem {
+  font-size: 2.5rem;
+}
+
+.fs-4-rem {
+  font-size: 4rem;
+}
+
+.fs-5-half-rem {
+  font-size: 5.625rem;
+}
+
+.h-11 {
+  height: 11% !important;
+}
+
+.h-20 {
+  height: 20% !important;
+}
+
+.h-31-half {
+  height: 31.5% !important;
+}
+
+.h-37 {
+  height: 37% !important;
+}
+
+.h-40 {
+  height: 40% !important;
+}
+
+.h-60 {
+  height: 60% !important;
+}
+
+.h-66 {
+  height: 66% !important;
+}
+
+.h-78 {
+  height: 78% !important;
+}
+
+.pt-4-half {
+  padding-top: 1.75rem !important;
+}
+
+.mt--4 {
+  margin-top: -1.75rem !important;
+}
+
+.mt--1 {
+  margin-top: -0.25rem !important;
+}
+
+.btn {
+  --bs-btn-border-radius: 0 !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: #1D1918 !important;
+  --bs-btn-border-color: #1D1918 !important;
+  --bs-btn-hover-bg: #1D1918 !important;
+  --bs-btn-hover-border-color: #1D1918 !important;
+  --bs-btn-active-bg: #1D1918 !important;
+  --bs-btn-active-border-color: #1D1918 !important;
+  --bs-btn-disabled-bg: #1D1918 !important;
+  --bs-btn-disabled-border-color: #1D1918 !important;
+}
+
+select option[value=""] {
+  color: gray !important;
+}
