@@ -7,6 +7,7 @@
   --bs-breakpoint-xxl: 1400px;
 } */
 
+/* Font */
 @font-face {
   font-family: 'Frunchy';
   src: url('assets/frunchy.ttf') format('truetype');
@@ -15,14 +16,6 @@
 @font-face {
   font-family: 'Inter';
   src: url('assets/Inter-Regular.woff2') format('woff2');
-}
-
-body {
-  background-color: #444444 !important;
-  font-family: 'Frunchy', sans-serif !important;
-  color: #1D1918;
-  padding: 0;
-  margin: 0;
 }
 
 .font-inter {
@@ -36,6 +29,24 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+/* Font */
+
+/* Container */
+html, body {
+  background-color: #444444 !important;
+  font-family: 'Frunchy', sans-serif !important;
+  color: #1D1918;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+.snap-container {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
 
 .container {
   background-color: #EAEBDD;
@@ -44,8 +55,12 @@ body {
 .mobile-container {
   display: block;
   max-width: var(--bs-breakpoint-sm) !important;
+  scroll-snap-align: start;
+  justify-content: center;
 }
+/* Container */
 
+/* Font Size */
 .fs-1-half-rem {
   font-size: 1.5rem;
 }
@@ -65,7 +80,9 @@ body {
 .fs-5-half-rem {
   font-size: 5.625rem;
 }
+/* Font Size */
 
+/* Height */
 .h-11 {
   height: 11% !important;
 }
@@ -97,11 +114,15 @@ body {
 .h-78 {
   height: 78% !important;
 }
+/* Height */
 
+/* Padding */
 .pt-4-half {
   padding-top: 1.75rem !important;
 }
+/* Padding */
 
+/* Margin */
 .mt--4 {
   margin-top: -1.75rem !important;
 }
@@ -109,6 +130,7 @@ body {
 .mt--1 {
   margin-top: -0.25rem !important;
 }
+/* Margin */
 
 .btn {
   --bs-btn-border-radius: 0 !important;
